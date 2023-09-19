@@ -10,17 +10,15 @@
    <h1>นี่แค่จำลองนะครับมันยังบ่อสมบูรณ์รอดูแบบเต็มได้ที่ใน...</h1>
 
    <script>
-      function logout() {
-         localStorage.removeItem('ss_token');
-         window.location.href = 'https://tktf4554.github.io/Logintest/index.html
-            ';
-      }
-
       // ตรวจสอบว่าไม่มี kein_token ใน localStorage
       if (!localStorage.getItem('kein_token')) {
          // ถ้าไม่มี kein_token, เปลี่ยนเส้นทางการเข้าถึงไปหน้า login.html
-         window.location.href = 'https://tktf4554.github.io/Logintest/index.html
-            ';
+         window.location.href = 'https://tktf4554.github.io/Logintest/index.html';
+      }
+
+      function logout() {
+         localStorage.removeItem('ss_token');
+         window.location.href = 'https://tktf4554.github.io/Logintest/index.html';
       }
    </script>
 </body>
