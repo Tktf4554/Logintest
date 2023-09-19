@@ -1,4 +1,3 @@
-// ส่วนของโค้ด JavaScript ที่ได้แก้ไขแล้ว
 function login() {
   var username = document.querySelector('#txt_username');
   var password = document.querySelector('#txt_password');
@@ -18,7 +17,6 @@ function login() {
     // Send request to server
     // Simulate
     if ((username.value === 'test1' && password.value === '4554') || (username.value === 'bearbug' && password.value === '1234')) {
-      var Session = {}
       // ล็อกอินสำเร็จ, เพิ่ม kein_token ลงใน localStorage
       localStorage.setItem('kein_token', 'your_token_value_here');
 
@@ -31,4 +29,4 @@ function login() {
     }
   }
 }
-// ส่วนอื่น ๆ ของโค้ด JavaScript ของคุณ
+
