@@ -1,30 +1,25 @@
+<!DOCTYPE html>
 <html>
-   <head>
-      
-   </head>
-   <body class="p-5">
-      Hallo ❤️❤️👋👋
+<head>
+   <!-- หัวหน้าเว็บไซต์ -->
+</head>
+<body class="p-5">
+   Hallo ❤️❤️👋👋
 
-    <div onclick='logout()' class='btn btn-danger'>Log out
-    </div>
-     <h1>
-        นี่แค่จำลองนะครับมันยังบ่อสมบูรณ์รอดูแบบเต็มได้ที่ใน...
-     </h1>
-     
-     
-    <script>
-       function logout() {
-         localStorage.removeItem('ss_token')
-         window.location.href ='index.html'
-       }
+   <div onclick='logout()' class='btn btn-danger'>Log out</div>
+   <h1>นี่แค่จำลองนะครับมันยังบ่อสมบูรณ์รอดูแบบเต็มได้ที่ใน...</h1>
 
-      // ตรวจสอบว่ามี kein_token ใน localStorage
-if (localStorage.getItem('kein_token')) {
-  // ถ้าไม่มี kein_token, เปลี่ยนเส้นทางการเข้าถึงไปหน้า login.html
-  window.location.href = 'index.html';
-}
-    </script>
-    
-   </body>
-   
+   <script>
+      function logout() {
+         localStorage.removeItem('ss_token');
+         window.location.href = 'index.html';
+      }
+
+      // ตรวจสอบว่าไม่มี kein_token ใน localStorage
+      if (!localStorage.getItem('kein_token')) {
+         // ถ้าไม่มี kein_token, เปลี่ยนเส้นทางการเข้าถึงไปหน้า login.html
+         window.location.href = 'index.html';
+      }
+   </script>
+</body>
 </html>
