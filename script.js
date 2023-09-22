@@ -18,7 +18,7 @@ function login() {
     var keinToken = localStorage.getItem('kein_token');
     if (keinToken) {
       // Redirect to welcome.html if kein_token exists
-      window.location.href = 'https://tktf4554.github.io/Logintest/welcome.html';
+      window.location.href = 'welcome.html';
     } else {
       // Send request to server
       // Simulate
@@ -27,7 +27,7 @@ function login() {
         localStorage.setItem('kein_token', 'your_token_value_here');
 
         // เปลี่ยนเส้นทางการเข้าถึงไปยังหน้า welcome.html หลังจากล็อกอินสำเร็จ
-        window.location.href = 'https://tktf4554.github.io/Logintest/welcome.html';
+        window.location.href = '.welcome.html';
       } else {
         // ถ้า username หรือ password ไม่ถูกต้อง
         // แสดงข้อความผิดพลาดหรือทำอื่นตามต้องการ
